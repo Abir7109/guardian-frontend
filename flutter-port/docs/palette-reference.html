@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Guardian — Palette & Type Reference</title>
+<style>
+  :root{
+    --void:#050507; --slate:#131316; --surface:#201F22; --lowest:#0E0E11;
+    --cyan:#49FCD9; --peri:#B6C4FF; --alert:#FF5167; --blue:#3D6FFF;
+    --mint:#4DFFDB; --on:#E5E1E5; --onvar:#C3C5D8; --outline:#8D90A1; --hair:#434655;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--void);color:var(--on);
+       font-family:Inter,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+       padding:40px;max-width:1100px;margin:0 auto}
+  h1{font-size:28px;font-weight:800;letter-spacing:2px;margin:0 0 4px;color:var(--cyan)}
+  .sub{font-size:10px;font-weight:700;letter-spacing:4px;color:var(--onvar);opacity:.6;margin-bottom:36px}
+  h2{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--peri);
+     margin:36px 0 12px;border-bottom:1px solid var(--hair);padding-bottom:8px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .sw{border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--slate)}
+  .chip{height:64px}
+  .meta{padding:8px 10px}
+  .name{font-size:11px;font-weight:700;color:var(--on)}
+  .hex{font-size:10px;color:var(--outline);font-variant-numeric:tabular-nums}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  td,th{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(67,70,85,.5)}
+  th{font-size:9px;letter-spacing:1.5px;color:var(--onvar);text-transform:uppercase}
+  .grad{height:52px;border-radius:12px;margin-bottom:8px;
+        display:flex;align-items:center;justify-content:center;
+        font-size:10px;font-weight:700;letter-spacing:1px;color:#00164F}
+  .cta{background:linear-gradient(90deg,var(--blue),var(--mint))}
+  .tile{background:linear-gradient(90deg,var(--blue),#6B4FFF)}
+  .pro{background:linear-gradient(90deg,var(--alert),#FFB3B5)}
+  .hud{font-size:9px;font-weight:700;letter-spacing:1.5px;color:var(--cyan);
+       border:1px solid rgba(73,252,217,.4);background:rgba(73,252,217,.1);
+       border-radius:14px;padding:4px 8px;display:inline-block}
+  .glow{width:120px;height:120px;border-radius:50%;
+        background:radial-gradient(circle,rgba(73,252,217,.28),transparent 70%);
+        display:flex;align-items:center;justify-content:center;margin-top:10px}
+  .core{width:56px;height:56px;border-radius:50%;background:var(--lowest);
+        border:1px solid rgba(73,252,217,.5);color:var(--cyan);
+        display:flex;align-items:center;justify-content:center;
+        font-size:8px;font-weight:700;letter-spacing:.5px;
+        box-shadow:0 0 24px rgba(73,252,217,.35)}
+  code{color:var(--cyan);font-size:11px}
+</style>
+</head>
+<body>
+  <h1>GUARDIAN</h1>
+  <div class="sub">ANTI-THEFT INTELLIGENCE · DESIGN REFERENCE</div>
+
+  <h2>SURFACES</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--void)"></div><div class="meta"><div class="name">voidBlack</div><div class="hex">#050507</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--lowest)"></div><div class="meta"><div class="name">surfaceLowest</div><div class="hex">#0E0E11</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--slate)"></div><div class="meta"><div class="name">slate</div><div class="hex">#131316</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--surface)"></div><div class="meta"><div class="name">surfaceContainer</div><div class="hex">#201F22</div></div></div>
+  </div>
+
+  <h2>ACCENTS & STATUS</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--cyan)"></div><div class="meta"><div class="name">cyan · secondary</div><div class="hex">#49FCD9</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--peri)"></div><div class="meta"><div class="name">periwinkle · primary</div><div class="hex">#B6C4FF</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--alert)"></div><div class="meta"><div class="name">alert · tertiary</div><div class="hex">#FF5167</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--blue)"></div><div class="meta"><div class="name">blue</div><div class="hex">#3D6FFF</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--mint)"></div><div class="meta"><div class="name">mint</div><div class="hex">#4DFFDB</div></div></div>
+  </div>
+
+  <h2>TEXT & LINES</h2>
+  <div class="grid">
+    <div class="sw"><div class="chip" style="background:var(--on)"></div><div class="meta"><div class="name">onSurface</div><div class="hex">#E5E1E5</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--onvar)"></div><div class="meta"><div class="name">onSurfaceVariant</div><div class="hex">#C3C5D8</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--outline)"></div><div class="meta"><div class="name">outline</div><div class="hex">#8D90A1</div></div></div>
+    <div class="sw"><div class="chip" style="background:var(--hair)"></div><div class="meta"><div class="name">outlineVariant</div><div class="hex">#434655</div></div></div>
+  </div>
+
+  <h2>GRADIENTS</h2>
+  <div class="grad cta">CTA · #3D6FFF → #4DFFDB</div>
+  <div class="grad tile">PERMISSION TILE · #3D6FFF → #6B4FFF</div>
+  <div class="grad pro">PRO BADGE · #FF5167 → #FFB3B5</div>
+
+  <h2>TYPE SCALE</h2>
+  <table>
+    <tr><th>Token</th><th>Spec</th><th>Sample</th></tr>
+    <tr><td>displayXl</td><td>32 / 800 / ls 8</td><td style="font-size:32px;font-weight:800;letter-spacing:8px;color:var(--peri)">GUARDIAN</td></tr>
+    <tr><td>displayLg</td><td>32 / 800 / ls 2</td><td style="font-size:32px;font-weight:800;letter-spacing:2px">DEVICE LOCKED</td></tr>
+    <tr><td>headline</td><td>28 / 800 / ls 1</td><td style="font-size:26px;font-weight:800;letter-spacing:1px">ALEX VANCE</td></tr>
+    <tr><td>titleLg</td><td>26 / 800</td><td style="font-size:24px;font-weight:800">Defense That Never Sleeps</td></tr>
+    <tr><td>body</td><td>14 / 500</td><td style="font-size:14px;color:var(--onvar)">Premium protection for your mobile lifestyle.</td></tr>
+    <tr><td>label</td><td>12 / 700 / ls 1</td><td style="font-size:12px;font-weight:700;letter-spacing:1px">SIGN IN</td></tr>
+    <tr><td>labelMicro</td><td>10 / 700 / ls 1.5</td><td style="font-size:10px;font-weight:700;letter-spacing:1.5px;color:var(--onvar)">SECURITY PROTOCOLS</td></tr>
+    <tr><td>labelNano</td><td>9 / 700 / ls 0.5</td><td style="font-size:9px;font-weight:700;letter-spacing:.5px;color:var(--onvar)">OPERATOR ACTIVE</td></tr>
+  </table>
+
+  <h2>COMPONENTS</h2>
+  <div style="display:flex;gap:24px;align-items:center;flex-wrap:wrap">
+    <span class="hud">● ACTIVE</span>
+    <span class="hud" style="color:var(--alert);border-color:rgba(255,81,103,.4);background:rgba(255,81,103,.12)">PENDING</span>
+    <span class="hud" style="color:#5B0015;border:none;background:linear-gradient(90deg,#FF5167,#FFB3B5)">PRO</span>
+    <div class="glow"><div class="core">ARMED</div></div>
+  </div>
+
+  <h2>HAIRLINE RULE</h2>
+  <p style="font-size:12px;color:var(--onvar);max-width:640px;line-height:1.6">
+    34 of 34 borders in the original app are <code>0.5 dp</code> at
+    <code>#434655</code> with 0.2–0.5 alpha. This hairline is a stylistic
+    signature — do not round it to 1 dp in the Flutter port.
+  </p>
+</body>
+</html>
